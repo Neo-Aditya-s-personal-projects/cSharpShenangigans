@@ -1,32 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("What program do you want to run?");
-String programOfChoice = Console.ReadLine();
-if (programOfChoice == "Palindrome Checker")
+namespace CSharpShenanigans
 {
-    Console.WriteLine("Enter a number");
-    int input = Convert.ToInt32(Console.ReadLine());
-    int reverse = 0;
-    int temp = input;
-    int digit;
-    if (input < 0)
+    class Program
     {
-        Console.WriteLine("This number is not a Palindrome");
-    }
-    else
-    {
-        while (temp != 0)
-        {
-            digit = temp % 10;
-            reverse = reverse * 10 + digit;
-            temp /= 10;
-        }
-        if (reverse == input)
-        {
-            Console.WriteLine("This number is a Palindrome");
-        }
-        else
-        {
-            Console.WriteLine("This number isn't a Palindrome");
+        static void Main(string[] args) {
+            Console.WriteLine("What program do you want to run?");
+            String programOfChoice = Console.ReadLine();
+            if (programOfChoice == "Palindrome Checker") {
+                PalindromeChecker.Run();
+            }
         }
     }
 }
