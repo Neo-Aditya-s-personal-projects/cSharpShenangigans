@@ -3,16 +3,15 @@ Console.WriteLine("Enter a number");
 int input = Convert.ToInt32(Console.ReadLine());
 int reverse = 0;
 int temp = input;
-int place = 1;
+int digit;
 if (input < 0) {
     Console.WriteLine("This number is not a Palindrome");
 } 
 else {
     while (temp !=0) {
-        int digit = input % 10;
-        reverse = reverse * place + digit;
-        place = place * 10;
-        temp = temp / 10;
+        digit = temp % 10;
+        reverse = reverse * 10 + digit;
+        temp /= 10;
     }
     if (reverse == input) {
         Console.WriteLine("This number is a Palindrome");
