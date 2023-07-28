@@ -22,7 +22,7 @@ class PerimeterSubCategory
         }
         else if (Program == "Parallelogram")
         {
-            Parallelogram.Run();
+            ParallelogramPerimeter.Run();
         }
         else if (Program == "Regular Polygon")
         {

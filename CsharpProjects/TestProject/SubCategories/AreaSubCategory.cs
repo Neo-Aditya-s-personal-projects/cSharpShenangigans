@@ -22,7 +22,7 @@ class AreaSubCategory
         }
         else if (Program == "Parallelogram")
         {
-            Parallelogram.Run();
+            ParallelogramArea.Run();
         }
         else if (Program == "Trapezoid")
         {
