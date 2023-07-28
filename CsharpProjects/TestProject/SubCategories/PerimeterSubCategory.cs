@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-class AreaSubCategory
+class PerimeterSubCategory
 {
     public static void Run()
     {
@@ -14,23 +14,19 @@ class AreaSubCategory
         string Program = Console.ReadLine();
         if (Program == "Circle")
         {
-            CircleArea.Run();
+            CirclePerimeter.Run();
         }
         else if (Program == "Triangle")
         {
-            TriangleArea.Run();
+            TrianglePerimeter.Run();
         }
         else if (Program == "Parallelogram")
         {
             Parallelogram.Run();
         }
-        else if (Program == "Trapezoid")
-        {
-            TrapezoidArea.Run();
-        }
         else if (Program == "Regular Polygon")
         {
-            RegularPolygonArea.Run();
+            RegularPolygonPerimeter.Run();
         }
         else {
             Console.WriteLine("Try Again");

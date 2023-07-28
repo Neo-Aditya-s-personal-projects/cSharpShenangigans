@@ -19,7 +19,7 @@ namespace CSharpShenanigans
             }
             else {
                 Console.WriteLine("Try Again");
-                Program.Main(args);
+                Main(args);
             }
         }
     }
