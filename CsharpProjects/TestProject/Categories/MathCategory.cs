@@ -24,7 +24,7 @@ class MathCategory
         }
         else {
             Console.WriteLine("Try Again");
-            MathCategory.Run();
+            Run();
         }
     }
 }

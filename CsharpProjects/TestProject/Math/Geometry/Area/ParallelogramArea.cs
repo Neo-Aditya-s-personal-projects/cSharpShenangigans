@@ -1,4 +1,4 @@
-class Parallelogram
+class ParallelogramArea
 {
     public static void Run()
     {

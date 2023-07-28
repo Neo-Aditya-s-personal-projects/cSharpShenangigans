@@ -19,7 +19,8 @@ class CheckerSubCategory
             PrimeChecker.Run();
         }
         else {
-            System.Console.WriteLine("Try Again"); 
+            Console.WriteLine("Try Again"); 
+            Run();
         }
     }
 }

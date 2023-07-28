@@ -3,7 +3,7 @@ class GeometrySubCategory
     public static void Run()
     {
         Console.WriteLine("The subcategories are are: \n \n");
-        string[] SubCategories = { "Area" };
+        string[] SubCategories = { "Area", "Perimeter" };
         for (int i = SubCategories.Length - 1; i >= 0; i--)
         {
             Console.WriteLine("** " + SubCategories[i]);
@@ -14,9 +14,13 @@ class GeometrySubCategory
         {
            AreaSubCategory.Run(); 
         }
+        else if (SubCategory == "Perimeter") 
+        {
+            PerimeterSubCategory.Run();
+        }
         else {
             Console.WriteLine("Try Again");
-            GeometrySubCategory.Run();
+            Run();
         }
     }
 }
