@@ -5,7 +5,7 @@ class PerimeterSubCategory
     public static void Run()
     {
         Console.WriteLine("The options are: \n \n");
-        string[] Programs = { "Circle", "Triangle", "Parallelogram", "Trapezoid", "Regular Polygon" };
+        string[] Programs = { "Circle", "Parallelogram", "Regular Polygon" };
         for (int i = Programs.Length - 1; i >= 0; i--)
         {
             Console.WriteLine("** " + Programs[i]);
@@ -15,10 +15,6 @@ class PerimeterSubCategory
         if (Program == "Circle")
         {
             CirclePerimeter.Run();
-        }
-        else if (Program == "Triangle")
-        {
-            TrianglePerimeter.Run();
         }
         else if (Program == "Parallelogram")
         {
