@@ -6,7 +6,7 @@ namespace CSharpShenanigans
         static void Main(string[] args)
         {
             Console.WriteLine("The Categories are: \n \n");
-            string[] Categories = {"Math"};
+            string[] Categories = { "Math" };
             for (int i = Categories.Length - 1; i >= 0; i--)
             {
                 Console.WriteLine("** " + Categories[i]);
@@ -15,20 +15,11 @@ namespace CSharpShenanigans
             string CatgoryOfChoice = Console.ReadLine();
             if (CatgoryOfChoice == "Math")
             {
-                Console.WriteLine("The Programs are: \n \n");
-                string[] Programs = {"Palindrome Checker", "Prime Checker"};
-                for (int i = Programs.Length - 1; i >= 0; i--) {
-                    Console.WriteLine("** " + Programs[i]);
-                }
-                Console.WriteLine("\n \n What program do you want to run?");
-                string programOfChoice = Console.ReadLine();
-                if (programOfChoice == "Palindrome Checker")
-                {
-                    PalindromeChecker.Run();
-                }
-                else if (programOfChoice == "Prime Checker") {
-                    PrimeChecker.Run();
-                }
+                MathCategory.Run();
+            }
+            else {
+                Console.WriteLine("Try Again");
+                Program.Main(args);
             }
         }
     }
