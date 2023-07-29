@@ -30,5 +30,15 @@ class PalindromeChecker
                 Console.WriteLine("This number isn't a Palindrome");
             }
         }
+        Console.WriteLine("Do you want to check another number? Y/N");
+        char repeat = Console.ReadLine();
+        while (repeat != 'Y' && repeat != 'N')
+        {
+            Console.WriteLine("Please enter either a capital Y or a capital N");
+            repeat = Console.ReadLine();
+        }
+        if (repeat == 'Y') [
+            Run();
+        ]
     }
 }

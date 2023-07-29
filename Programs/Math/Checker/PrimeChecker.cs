@@ -34,5 +34,15 @@ class PrimeChecker
                 Console.WriteLine("The number is Prime");
             }
         }
+        Console.WriteLine("Do you want to check another number? Y/N");
+        char repeat = Console.ReadLine();
+        while (repeat != 'Y' && repeat != 'N')
+        {
+            Console.WriteLine("Please enter either a capital Y or a capital N");
+            repeat = Console.ReadLine();
+        }
+        if (repeat == 'Y') [
+            Run();
+        ]
     }
 }
