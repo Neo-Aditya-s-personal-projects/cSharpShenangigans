@@ -1,8 +1,11 @@
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
 class TicTacToe
 {
-    private static char player1 = 0;
-    private static char player2 = 0;
-    private static char[] board = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    private static char player1 = '0';
+    private static char player2 = '0';
+    private static char[] board = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
     private static Boolean isPlayer1 = true;
     private static int choice = 10;
     private static string status = "ongoing";
@@ -10,15 +13,18 @@ class TicTacToe
     {
         Console.WriteLine("Neither player can have a number as their symbol nor can they have the same symbol as the other player. \n \n");
         Console.WriteLine("Player 2 choose your symbol:");
-        player2 = Console.ReadLine();
+        player2 = Convert.ToChar(Console.ReadLine());
         Console.WriteLine("Player 1 choose your symbol");
-        player1 = Console.ReadLine();
+        player1 = Convert.ToChar(Console.ReadLine());
         if (player2 == player1 || (player1 >= 48 && player1 <= 57) || (player2 >= 48 && player2 <= 57))
         {
-            "Try again"
+            Console.WriteLine("Try again");
             Run();
         }
-        board = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int i = 0; i < board.Length; i++)
+        {
+            board[i] = Convert.ToChar(i + 48);
+        }
         isPlayer1 = true;
         status = "ongoing";
         while (status == "ongoing")
@@ -28,15 +34,15 @@ class TicTacToe
         }
         Console.WriteLine(status);
         Console.WriteLine("Do you want to play again? Y/N");
-        char repeat = Console.ReadLine();
+        char repeat = Convert.ToChar(Console.ReadLine());
         while (repeat != 'Y' && repeat != 'N')
         {
             Console.WriteLine("Please enter either a capital Y or a capital N");
-            repeat = Console.ReadLine();
+            repeat = Convert.ToChar(Console.ReadLine());
         }
-        if (repeat == 'Y') [
+        if (repeat == 'Y') {
             Run();
-        ]
+        }
     }
 
     private static void UpdateBoard()
@@ -52,7 +58,7 @@ class TicTacToe
         Console.WriteLine("\n");
         Board();
         choice = Convert.ToInt32(Console.ReadLine());
-        if (board != player1 && board != player2)
+        if (board[choice] != player1 && board[choice] != player2)
         {
             if (isPlayer1)
             {
@@ -83,7 +89,7 @@ class TicTacToe
         Console.WriteLine("     |     |      ");
     }
     private static void UpdateStatus() {
-        boolean win = false;
+        Boolean win = false;
         if (board[1] == board[2] && board[2] == board[3])
             {
                 win = true;
@@ -124,7 +130,7 @@ class TicTacToe
                 status = "Player 2 Wins! Better Luck next time Player 1";
             }
             else if (win && !isPlayer1) {
-                status = "Player 1 Wins! better Lcuk Next time Player 2"
+                status = "Player 1 Wins! better Lcuk Next time Player 2";
             }
     }
 }
