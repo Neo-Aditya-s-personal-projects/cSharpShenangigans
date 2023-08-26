@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
+      "projectPath": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
       "packagesPath": "C:\\Users\\Adity\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\obj\\",
+      "outputPath": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Adity\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.307\\RuntimeIdentifierGraph.json"
       }
     }
   }

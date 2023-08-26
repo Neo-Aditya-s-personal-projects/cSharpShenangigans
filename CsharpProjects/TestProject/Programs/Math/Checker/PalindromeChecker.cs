@@ -4,7 +4,8 @@ class PalindromeChecker
     {
         // See https://aka.ms/new-console-template for more information
         Console.WriteLine("Enter your word/number");
-        char[] input = Convert.ToBase64CharArray(Console.ReadLine());
+        string stringInput = Console.ReadLine();
+        char[] input = stringInput.ToCharArray();
         Boolean isAPalindrome = true;
         for (int i = input.Length - 1; i >= 0; i--) {
             if (input[i] != input[input.Length - i - 1]) {
