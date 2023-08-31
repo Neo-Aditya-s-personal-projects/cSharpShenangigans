@@ -9,14 +9,14 @@ class TriangleArea
         double area = (baseOfTriangle * height) / 2;
         Console.WriteLine("The area og the triangle is " + area);
         Console.WriteLine("Do you want to find the area of another triangle? Y/N");
-        char repeat = Console.ReadLine();
-        while (repeat != 'Y' && repeat != 'N')
+        string repeat = Console.ReadLine();
+        while (repeat != "Y" && repeat != "N")
         {
             Console.WriteLine("Please enter either a capital Y or a capital N");
             repeat = Console.ReadLine();
         }
-        if (repeat == 'Y') [
+        if (repeat == "Y") {
             Run();
-        ]
+        }
     }
 }

@@ -9,14 +9,14 @@ class ParallelogramArea
         double area = baseofParallelogram * height;
         Console.WriteLine("The area of the parallelogram is " + area);
         Console.WriteLine("Do you want to find the area of another parallelogram? Y/N");
-        char repeat = Console.ReadLine();
-        while (repeat != 'Y' && repeat != 'N')
+        string repeat = Console.ReadLine();
+        while (repeat != "Y" && repeat != "N")
         {
             Console.WriteLine("Please enter either a capital Y or a capital N");
             repeat = Console.ReadLine();
         }
-        if (repeat == 'Y') [
+        if (repeat == "Y") {
             Run();
-        ]
+        }
     }
 }

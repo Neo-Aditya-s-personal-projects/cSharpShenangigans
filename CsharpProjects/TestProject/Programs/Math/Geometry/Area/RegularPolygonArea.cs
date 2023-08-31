@@ -13,14 +13,14 @@ class RegularPolygonArea
         area /= 2;
         Console.WriteLine("The area of the regular polygon is " + area);
         Console.WriteLine("Do you want to find the area of another regular polygon? Y/N");
-        char repeat = Console.ReadLine();
-        while (repeat != 'Y' && repeat != 'N')
+        string repeat = Console.ReadLine();
+        while (repeat != "Y" && repeat != "N")
         {
             Console.WriteLine("Please enter either a capital Y or a capital N");
             repeat = Console.ReadLine();
         }
-        if (repeat == 'Y') [
+        if (repeat == "Y") {
             Run();
-        ]
+        }
     }
 }

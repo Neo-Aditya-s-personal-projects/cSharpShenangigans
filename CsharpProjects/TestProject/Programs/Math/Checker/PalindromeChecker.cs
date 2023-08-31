@@ -12,21 +12,18 @@ class PalindromeChecker
                 isAPalindrome = false;
             }
         }
-        if (isAPalindrome) {
+        if (isAPalindrome)
             Console.WriteLine("The word/number is a palindrome");
-        }
-        else {
+        else
             Console.WriteLine("The word/number isn't a palindrome");
-        }
         Console.WriteLine("Do you want to check another word/number? Y/N");
         char repeat = Convert.ToChar(Console.ReadLine());
-        while (repeat != 'Y' && repeat != 'N')
+        while (repeat != 'Y' && repeat != 'N' && repeat!='y' && repeat!='n')
         {
-            Console.WriteLine("Please enter either a capital Y or a capital N");
+            Console.WriteLine("Please enter either a Y or an N");
             repeat = Convert.ToChar(Console.ReadLine());
         }
-        if (repeat == 'Y') {
+        if (repeat == 'Y' || repeat =='y')
             Run();
-        }
     }
 }
