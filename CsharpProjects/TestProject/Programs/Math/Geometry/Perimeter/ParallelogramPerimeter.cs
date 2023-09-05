@@ -9,5 +9,15 @@ class ParallelogramPerimeter
         double perimeter = length + width;
         perimeter *= 2;
         Console.WriteLine("The perimeter of the parallelogram is " + perimeter);
+        Console.WriteLine("Do you want to find the perimeter of another paralellogram? Y/N");
+        string repeat = Console.ReadLine();
+        while (repeat != "Y" && repeat != "N")
+        {
+            Console.WriteLine("Please enter either a capital Y or a capital N");
+            repeat = Console.ReadLine();
+        }
+        if (repeat == "Y") {
+            Run();
+        }
     }
 }

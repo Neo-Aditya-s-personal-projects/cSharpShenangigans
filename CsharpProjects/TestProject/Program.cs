@@ -6,7 +6,7 @@ namespace CSharpShenanigans
         static void Main(string[] args)
         {
             Console.WriteLine("The Categories are: \n \n");
-            string[] Categories = { "Math" };
+            string[] Categories = { "Math", "Game" };
             for (int i = Categories.Length - 1; i >= 0; i--)
             {
                 Console.WriteLine("** " + Categories[i]);
@@ -16,6 +16,9 @@ namespace CSharpShenanigans
             if (CatgoryOfChoice == "Math")
             {
                 MathCategory.Run();
+            }
+            else if (CatgoryOfChoice == "Game") {
+                GameCategory.Run();
             }
             else {
                 Console.WriteLine("Try Again");
