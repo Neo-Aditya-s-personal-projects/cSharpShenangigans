@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj": {}
+    "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj": {
+    "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectUniqueName": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
         "projectName": "TestProject",
-        "projectPath": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
+        "projectPath": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\TestProject.csproj",
         "packagesPath": "C:\\Users\\Adity\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\obj\\",
+        "outputPath": "C:\\Users\\Adity\\Desktop\\Personal Code\\cSharpShenangigans-1\\CsharpProjects\\TestProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Adity\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.312\\RuntimeIdentifierGraph.json"
         }
       }
     }
