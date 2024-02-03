@@ -12,5 +12,8 @@ class GameCategory {
         if (SubCategory == "Paper-and-pencil") {
             PaperAndPencilGamesSubCategory.Run();
         }
+        else {
+            Run();
+        }
     }
 }

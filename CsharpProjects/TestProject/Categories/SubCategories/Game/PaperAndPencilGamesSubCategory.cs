@@ -11,8 +11,11 @@ class PaperAndPencilGamesSubCategory {
         if (Program == "TicTacToe") {
             TicTacToe.Run();
         }
-        if (Program == "Hexapawn") {
+        else if (Program == "Hexapawn") {
             HexapawnBoardGames.Run();
+        }
+        else {
+            Run();
         }
     }
 }
